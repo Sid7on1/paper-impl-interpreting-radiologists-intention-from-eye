@@ -1,0 +1,22 @@
+# Configuration for Interpreting Radiologist's Intention from Eye Movements in Chest X-ray Diagnosis Implementation
+
+model:
+  name: "default_model"
+  hidden_size: 512
+  num_layers: 6
+  dropout: 0.1
+
+training:
+  batch_size: 32
+  learning_rate: 0.001
+  epochs: 100
+  save_every: 10
+
+data:
+  train_path: "data/train.csv"
+  val_path: "data/val.csv"
+  test_path: "data/test.csv"
+
+logging:
+  level: "INFO"
+  save_dir: "logs"
